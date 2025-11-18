@@ -1,0 +1,30 @@
+:root{
+  --max-w: 1000px;
+  --accent: #0366d6;
+}
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, Arial, sans-serif;margin:0;background:#f7fafc;color:#0f172a}
+.app-root{display:flex;flex-direction:column;min-height:100vh}
+.header{background:linear-gradient(90deg,#fff,#f1f5f9);padding:12px 20px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #e2e8f0}
+.header h1{margin:0;font-size:20px}
+.header nav a{color:var(--accent);text-decoration:none}
+.container{max-width:var(--max-w);margin:20px auto;padding:0 16px;flex:1}
+.footer{text-align:center;padding:12px;font-size:13px;color:#64748b}
+.toolbar{display:flex;justify-content:flex-end;margin-bottom:12px}
+.card{background:white;padding:12px;border-radius:8px;box-shadow:0 1px 2px rgba(0,0,0,0.04);margin-bottom:12px}
+.form label{display:block;margin-bottom:8px}
+.form input{width:100%;padding:8px;border:1px solid #e6eef8;border-radius:6px;margin-top:6px}
+.form-actions{display:flex;gap:8px;margin-top:12px}
+button{background:var(--accent);color:white;border:none;padding:8px 12px;border-radius:6px;cursor:pointer}
+button.secondary{background:#e2e8f0;color:#0f172a}
+.user-table{width:100%;border-collapse:collapse}
+.user-table th,.user-table td{padding:10px;text-align:left;border-bottom:1px solid #eef2f7}
+.actions button{margin-right:8px}
+.error{background:#fee2e2;color:#b91c1c;padding:8px;border-radius:6px;margin-bottom:12px}
+.spinner{padding:12px}
+@media (max-width:720px){
+  .user-table thead{display:none}
+  .user-table, .user-table tbody, .user-table tr, .user-table td{display:block;width:100%}
+  .user-table tr{margin-bottom:12px}
+  .user-table td{padding:8px;border-bottom:none;background:white;border-radius:8px;margin-bottom:6px}
+}
